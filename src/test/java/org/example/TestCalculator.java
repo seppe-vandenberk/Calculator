@@ -13,7 +13,8 @@ public class TestCalculator {
         Assertions.assertEquals(c.getSum(),2.0);
     }
 
-    //@Test
+    
+   @Test
     public void eenPlusEen_isDrie_ikKijkDoorMijnVingersWantIkZieDitLieverNiet(){
         double a = 1.0;
         double b = 1;
