@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run: gradle dependencies
-      - run: gradle test
+      
       - run:
           name: Creating Dummy Artifacts
           command: |
@@ -34,3 +34,4 @@ jobs:
           name: Upload Failed Tests
           command: curl --data fail_tests.log http://example.com/error_logs
           when: on_fail
+      - run: gradle test
