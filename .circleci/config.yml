@@ -16,8 +16,6 @@ jobs:
       - checkout
       - run: gradle dependencies
       - run: gradle test
-    working_directory: /tmp
-    steps:
       - run:
           name: Creating Dummy Artifacts
           command: |
